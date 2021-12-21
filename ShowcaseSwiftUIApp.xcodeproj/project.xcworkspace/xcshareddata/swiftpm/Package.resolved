@@ -1,0 +1,88 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "Action",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/Action.git",
+        "state": {
+          "branch": null,
+          "revision": "55f5da064fd66cb09acde22cbbb744fe7f6355aa",
+          "version": "5.0.0"
+        }
+      },
+      {
+        "package": "Kanna",
+        "repositoryURL": "https://github.com/tid-kijyun/Kanna.git",
+        "state": {
+          "branch": null,
+          "revision": "f9e4922223dd0d3dfbf02ca70812cf5531fc0593",
+          "version": "5.2.7"
+        }
+      },
+      {
+        "package": "RxSwift",
+        "repositoryURL": "https://github.com/ReactiveX/RxSwift.git",
+        "state": {
+          "branch": null,
+          "revision": "7c17a6ccca06b5c107cfa4284e634562ddaf5951",
+          "version": "6.2.0"
+        }
+      },
+      {
+        "package": "RxSwiftExt",
+        "repositoryURL": "https://github.com/RxSwiftCommunity/RxSwiftExt.git",
+        "state": {
+          "branch": null,
+          "revision": "a42af9caeab63f2dbde318f1f3dc424f05871a37",
+          "version": "6.1.0"
+        }
+      },
+      {
+        "package": "ShowcaseData",
+        "repositoryURL": "https://github.com/lukaszspaczynski/showcase-ios-data.git",
+        "state": {
+          "branch": null,
+          "revision": "e9f71df9aadb6147d9df4f1032954acd4a4b7885",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "ShowcaseDomain",
+        "repositoryURL": "https://github.com/lukaszspaczynski/showcase-ios-domain.git",
+        "state": {
+          "branch": null,
+          "revision": "91c4c3a29fdb6151392e09b335aad0f2f5cfec50",
+          "version": "1.0.1"
+        }
+      },
+      {
+        "package": "ShowcaseExtensions",
+        "repositoryURL": "https://github.com/lukaszspaczynski/showcase-ios-extensions.git",
+        "state": {
+          "branch": null,
+          "revision": "3dc2a8382f9502c1b31b5576a7cd659f29f81956",
+          "version": "1.0.2"
+        }
+      },
+      {
+        "package": "Swinject",
+        "repositoryURL": "https://github.com/Swinject/Swinject.git",
+        "state": {
+          "branch": null,
+          "revision": "f10b6e9ebff440f985c43008f7c2d097639fcb81",
+          "version": "2.8.1"
+        }
+      },
+      {
+        "package": "SwinjectAutoregistration",
+        "repositoryURL": "https://github.com/Swinject/SwinjectAutoregistration.git",
+        "state": {
+          "branch": null,
+          "revision": "9936170fd1a5e8c141a21de987c48cc4e0d6c943",
+          "version": "2.8.1"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
