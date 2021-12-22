@@ -14,9 +14,13 @@ extension BioPageView {
     final class ViewModel: ObservableObject {
         struct Bio {
             let summary: AttributedString
+            let links: [(title: AttributedString, url: URL)]
 
             init(bio: GetBioUseCaseOutput) {
                 summary = AttributedString(bio.bio)
+                links = bio
+                    .links
+                    .map { (title: AttributedString($0.title), url: $0.url) }
             }
         }
 
@@ -65,8 +69,13 @@ extension BioPageView {
                 }.disposed(by: disposeBag)
         }
 
-        func load() {
-            getBioAction.execute()
+        func load(force: Bool = false) {
+            switch (viewState, force) {
+            case (.loaded, false):
+                return
+            default:
+                getBioAction.execute()
+            }
         }
     }
 }

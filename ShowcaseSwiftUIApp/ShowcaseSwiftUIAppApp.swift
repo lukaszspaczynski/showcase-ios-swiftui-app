@@ -11,7 +11,7 @@ import SwiftUI
 struct ShowcaseSwiftUIAppApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView(resolver: AppResolver.default)
+            ContentView()
         }
     }
 }

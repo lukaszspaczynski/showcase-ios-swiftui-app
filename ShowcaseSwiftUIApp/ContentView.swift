@@ -10,11 +10,13 @@ import Swinject
 import SwinjectAutoregistration
 
 struct ContentView: View {
-    let resolver: Resolver
+    @Environment(\.dependenciesResolver) private var resolver
 
     var body: some View {
-        BioPageView(
-            viewModel: resolver~>)
+        NavigationView {
+            AvatarPageView(
+                viewModel: resolver~>)
+        }
     }
 }
 
@@ -22,7 +24,8 @@ struct ContentView: View {
 
     struct ContentView_Previews: PreviewProvider {
         static var previews: some View {
-            ContentView(resolver: AppResolver.preview)
+            ContentView()
+                .environment(\.dependenciesResolver, AppResolver.preview)
         }
     }
 

@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct SkillsPageView: View {
+    @Environment(\.presentationMode) private var presentationMode
+
     var body: some View {
         VStack {
             Spacer()
@@ -17,27 +19,25 @@ struct SkillsPageView: View {
                 .padding(16)
             Spacer()
             HStack {
-                Text(AttributedStringsRepository
-                    .prev
-                    .attributed())
-                    .padding(.init(
-                        top: 8,
-                        leading: 16,
-                        bottom: 16,
-                        trailing: 8
-                    ))
+                Button {
+                    presentationMode.wrappedValue.dismiss()
+                } label: {
+                    Text(AttributedStringsRepository
+                        .prev
+                        .attributed())
+                        .padding(.init(
+                            top: 8,
+                            leading: 16,
+                            bottom: 16,
+                            trailing: 8
+                        ))
+                }
                 Spacer()
-                Text(AttributedStringsRepository
-                    .startOver
-                    .attributed())
-                    .padding(.init(
-                        top: 8,
-                        leading: 8,
-                        bottom: 16,
-                        trailing: 16
-                    ))
             }
-        }.background(Colors.lightBlack)
+        }
+        .background(Colors.lightBlack)
+        .navigationTitle("")
+        .navigationBarHidden(true)
     }
 }
 

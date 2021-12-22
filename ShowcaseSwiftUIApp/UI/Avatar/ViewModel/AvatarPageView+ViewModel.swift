@@ -58,8 +58,13 @@ extension AvatarPageView {
                 }.disposed(by: disposeBag)
         }
 
-        func load() {
-            getAvatarAction.execute()
+        func load(force: Bool = false) {
+            switch (viewState, force) {
+            case (.loaded, false):
+                return
+            default:
+                getAvatarAction.execute()
+            }
         }
     }
 }

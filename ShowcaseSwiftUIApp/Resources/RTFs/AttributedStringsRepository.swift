@@ -17,7 +17,7 @@ enum AttributedStringsRepository {
     case errorBio
     case errorAvatar
     case skills
-    case startOver
+    case reload
 
     func attributed() -> AttributedString {
         switch self {
@@ -37,8 +37,8 @@ enum AttributedStringsRepository {
             return AttributedString(load(name: "error_avatar"))
         case .skills:
             return AttributedString(load(name: "skills"))
-        case .startOver:
-            return AttributedString(load(name: "start_over"))
+        case .reload:
+            return AttributedString(load(name: "reload"))
         }
     }
 
